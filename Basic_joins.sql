@@ -18,3 +18,23 @@ FROM
   inner join COUNTRY co on c.COUNTRYCODE = co.CODE 
 where 
   co.CONTINENT = 'Asia'
+
+
+"Given the CITY and COUNTRY tables, query the names of all cities where the CONTINENT is 'Africa'.
+
+Note: CITY.CountryCode and COUNTRY.Code are matching key columns.
+
+Input Format
+
+The CITY and COUNTRY tables are described as follows:
+
+Link : https://www.hackerrank.com/challenges/african-cities/problem?isFullScreen=true"
+
+SELECT 
+  DISTINCT(c.NAME) 
+FROM 
+  CITY c 
+  inner join COUNTRY co on c.COUNTRYCODE = co.CODE 
+where 
+  co.CONTINENT = 'Africa'
+
